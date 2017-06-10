@@ -1,5 +1,6 @@
 #!/usr/bin/env python
 import argparse
+from collections import OrderedDict
 
 
 def setup():
@@ -18,12 +19,12 @@ def package():
     print("package complete")
 
 
-steps = {
-    'setup': setup,
-    'compile': compile,
-    'test': test,
-    'package': package
-}
+steps = OrderedDict([
+    ('setup', setup),
+    ('compile', compile),
+    ('test', test),
+    ('package', package),
+])
 
 
 def hello():
@@ -39,4 +40,5 @@ if args.list_steps:
     hello()
 
 if args.run:
-    steps[args.run]()
+    action = args.run[0]
+    steps[action]()
