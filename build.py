@@ -27,7 +27,7 @@ steps = {
 
 
 def hello():
-    steps.keys()
+    print("\n".join(steps.keys()))
 
 parser = argparse.ArgumentParser(description='Build it')
 parser.add_argument('--list_steps', action='store_true')
