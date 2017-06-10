@@ -26,7 +26,7 @@ def package():
 
 def doc():
     time.sleep(20)
-    print("doc complete")
+    print("doc complete!")
 
 
 steps = OrderedDict([
