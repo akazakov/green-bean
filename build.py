@@ -1,21 +1,26 @@
 #!/usr/bin/env python
 import argparse
+import time
 from collections import OrderedDict
 
 
 def setup():
+    time.sleep(10)
     print("setup complete")
 
 
 def compile():
+    time.sleep(20)
     print("compile complete")
 
 
 def test():
+    time.sleep(30)
     print("test complete")
 
 
 def package():
+    time.sleep(40)
     print("package complete")
 
 
