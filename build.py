@@ -24,11 +24,17 @@ def package():
     print("package complete")
 
 
+def doc():
+    time.sleep(20)
+    print("doc complete")
+
+
 steps = OrderedDict([
     ('setup', setup),
     ('compile', compile),
     ('test', test),
     ('package', package),
+    ('doc', doc),
 ])
 
 
