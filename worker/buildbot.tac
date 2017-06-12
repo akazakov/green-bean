@@ -3,7 +3,7 @@ import os
 from buildbot_worker.bot import Worker
 from twisted.application import service
 
-basedir = '/home/tyoma/buildbot/worker'
+basedir = '/home/tyoma/green-bean/worker'
 rotateLength = 10000000
 maxRotatedFiles = 10
 

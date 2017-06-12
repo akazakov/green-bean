@@ -1,3 +1,6 @@
 .idea/*
 state.sqlite
 *.log
+*.pyc
+master/gitpoller-workdir
+twistd.pid
